@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>CLASSIC CARS COLLECTION</title>
+    <link rel="stylesheet" href="css/classic_cars.css">
+  </head>
+  <body>
+    <h1>Welcome to my Classic Car Collection!</h1>
+    <p>This collection features a variety of classic cars from different eras.  
+       Here you'll find the classic collection of your dreams</p>
+        <nav>
+            <a href="https://classiccars.com/" target="_blank">Car Collection</a>
+         </nav>
+         <main>
+            <section id="Collection" class="section">
+                <h2>Home</h2>
+                <p>Welcome to the home of the best classic Ford Mustangs.</p>
+                <a href="https://classiccars.com/listings/find/1967/ford/mustang" target="_blank">
+                    <img src="C:\Users\Kush\Downloads\1967-ford-mustang.jpg" alt="1967 Ford Mustang">
+                    <img src="C:\Users\Kush\Downloads\1967ford-mustang.jpg" alt="1967 Ford Mustang">
+                    <img src="C:\Users\Kush\Downloads\1967-ford-mustang green.jpg" alt="1967 Ford Mustang">
+                </a>
+                <h2>Registration Form</h2>
+                <p>Your chance to own a classic Ford Mustang is just a few deatils away. Register below to get started.</p>
+                <form action="process_registration.php" method="post">
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <br>
+                    <label for="DOB">Date of Birth:</label>
+                    <input type="date" id="DOB" required>
+                    <br>
+                    <br>
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                    <br>
+                    <br>
+                    <label for="telephone">Telephone:</label>  
+                    <input type="tel" id="telephone" name="telephone" required>
+                    <br>
+                    <br>
+                    <label for="email">Email address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <br>
+                    <label for="Car">Car by:</label>
+                    <select id="Car" name="Car by" required>
+                        <option value="">Select Car by</option>
+                        <option value="Date Listed">Date Listed</option>
+                        <option value="Year of Make">Year of Make</option>
+                        <option value="Price">Price</option>
+                    </select>
+                    <br>
+                    <br>
+                    <button type="submit">Register</button>
+                    <button type="reset">Cancel</button>
+                    </form>
+  </body>
+</html>
